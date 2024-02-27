@@ -8,6 +8,23 @@ probably fairly uncommon outside of our work environment: an
 environment in which markdownlint is used centrally but is unavailable
 on user machines.
 
+Although not support by pymarkdownlnt itself, mdlint-compat supports
+the enable/disable behaviour of markdownlint, meaning that linting can
+be turned off like so:
+
+```markdown
+This text will be linted.
+
+<!-- markdownlint-disable -->
+
+This text will not be linted.
+Make as many questionable decisions as you like here!
+
+<!-- markdownlint-enable -->
+
+This text will be linted again.
+```
+
 This wrapper makes use of pymarkdownlnt's default ruleset.  Excluding
 or adding rules is beyond the necessary scope of mdlint-compat, but
 can be achieved by modifying line 43 of `lint.py` if required.
