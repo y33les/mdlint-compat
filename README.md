@@ -20,7 +20,8 @@ will install the needed Python packages itself (if required).
 
 ## Usage
 
-1. Download the latest release and extract it into a new folder.
+1. Download the latest release (the ZIP file) and extract it into a
+   new folder.
 1. Open the folder in Windows Explorer.
 1. Copy the Markdown file you wish to fix into the folder containing
    mdlint-compat.
