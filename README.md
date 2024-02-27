@@ -21,6 +21,8 @@ will install the needed Python packages itself (if required).
 1. Drag and drop the Markdown file you wish to fix on to the batch script
 named `DROP_FILES_HERE.bat`.  mdlint-compat will automatically produce
 a fixed version of your file with the extension `.fixed.md`.
+    - **N.B.:** Your Markdown file _must_ end with the extension `.md`
+      or pymarkdownlnt will fail!
 
 > _Many thanks to [@jackdewinter](https://github.com/jackdewinter) for
 the [pymarkdown](https://github.com/jackdewinter/pymarkdown) library
