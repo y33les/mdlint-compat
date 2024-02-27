@@ -8,6 +8,10 @@ probably fairly uncommon outside of our work environment: an
 environment in which markdownlint is used centrally but is unavailable
 on user machines.
 
+This wrapper makes use of pymarkdownlnt's default ruleset.  Excluding
+or adding rules is beyond the necessary scope of mdlint-compat, but
+can be achieved by modifying line 43 of `lint.py` if required.
+
 ## Prerequisites
 
 mdlint-compat assumes that you have successfully installed Python 3
@@ -18,11 +22,15 @@ will install the needed Python packages itself (if required).
 
 1. Download the latest release and extract it into a new folder.
 1. Open the folder in Windows Explorer.
-1. Drag and drop the Markdown file you wish to fix on to the batch script
-named `DROP_FILES_HERE.bat`.  mdlint-compat will automatically produce
-a fixed version of your file with the extension `.fixed.md`.
+1. Copy the Markdown file you wish to fix into the folder containing
+   mdlint-compat.
+1. Drag and drop your Markdown file on to the batch script named
+   `DROP_FILES_HERE.bat`.  mdlint-compat will automatically produce a
+   fixed version of your file with the extension `.fixed.md`.
     - **N.B.:** Your Markdown file _must_ end with the extension `.md`
       or pymarkdownlnt will fail!
+
+---
 
 > _Many thanks to [@jackdewinter](https://github.com/jackdewinter) for
 the [pymarkdown](https://github.com/jackdewinter/pymarkdown) library

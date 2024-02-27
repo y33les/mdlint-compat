@@ -1,8 +1,8 @@
 ######################################################################
-mdlint-compat 0.1.0
-Phil Yeeles <phil@yeel.es>
-Last updated: 2024-02-27
-License: CC0
+## mdlint-compat 0.1.0                                              ##
+## Phil Yeeles <phil@yeel.es>                                       ##
+## Last updated: 2024-02-27                                         ##
+## License: CC0                                                     ##
 ######################################################################
 
 import fileinput,subprocess,os,re,sys,pip
